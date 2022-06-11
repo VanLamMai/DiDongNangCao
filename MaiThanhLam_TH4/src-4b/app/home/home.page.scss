@@ -1,0 +1,45 @@
+
+ion-content {
+  --ion-background-color: #00fff2;
+}
+
+ion-title {
+  color: #000000;
+}
+
+#container {
+  text-align: left;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#container ion-button {
+  background: #03ff6c;
+  color: white;
+  width: 100%;
+  border-radius: 100px;
+}
+
+#container ion-button:hover {
+  background: #03ff6c;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03ff6c,
+    0 0 25px #03ff6c,
+    0 0 50px #03ff6c,
+    0 0 100px #03ff6c;
+}

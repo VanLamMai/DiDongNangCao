@@ -1,0 +1,25 @@
+
+ion-content{
+    --ion-background-color : linear-gradient(to right top, rgb(54, 201, 41), rgb(234, 245, 80));
+}
+ion-input{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: #a32626;
+}
+ion-title{
+    text-align: center;
+    font-weight: bold;
+    color: #f80404;
+}
+ion-button{
+    background-color: linear-gradient(to bottom right, rgb(73, 60, 194), rgb(220, 233, 39));;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+p {
+    color: red;
+}

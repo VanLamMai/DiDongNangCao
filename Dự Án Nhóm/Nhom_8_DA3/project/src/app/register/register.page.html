@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Đăng ký</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="greentea">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <img src="assets/icon/TeaTime.png" class="image-responsive">
+        </ion-item>
+        <ion-item><ion-input type="text" id="userInput" [(ngModel)]="userInput" placeholder="Username"></ion-input></ion-item>
+        <br>
+        <ion-item><ion-input type="password" id="passInput" [(ngModel)]="passInput" placeholder="Password"></ion-input></ion-item>
+        <br>
+        <ion-item><ion-input type="password" id="rePassInput" [(ngModel)]="rePassInput" placeholder="Re-enter Password"></ion-input></ion-item>
+        <br>
+        <div class="ion-padding">
+          <ion-item>
+            <ion-button color="greentea" (click)="addAccount()" style="width: 250px;">
+              Đăng ký
+            </ion-button>
+          </ion-item>
+          <ion-item>
+            <ion-button color="greentea" (click)="showAccounts()" style="width: 250px;">
+              Xem tài khoản
+            </ion-button>
+          </ion-item>
+          <ion-item>
+            <ion-button color="greentea" (click)="backPageLogin()" style="width: 250px;">
+              Trở lại trang đăng nhập
+            </ion-button>
+          </ion-item>
+        </div>
+        <ion-item color="greentea">
+          <ion-label style="text-align: center;">HOẶC</ion-label>
+        </ion-item>
+        <ion-item style="margin-left: auto !important; margin-right: auto;" color="greentea">
+          <ion-col col-6>
+            <ion-button color="greentea" style="background-color: transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none; width: 100px; height: 100px;">
+              <ion-icon name="logo-facebook" style="width: 100px; height: 100px;"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col col-6>
+            <ion-button color="greentea" style="background-color: transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none; width: 100px; height: 100px;">
+              <ion-icon name="logo-google" style="width: 100px; height: 100px;"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

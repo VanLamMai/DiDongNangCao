@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Hệ Thống ATM
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-item class="ion-no-margin">
+        <ion-label>Tài khoản: </ion-label>
+        <ion-input value={{currentUser.id}} readonly></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row class="ion-justify-content-center ion-margin-top">
+      <ion-button color="secondary" (click)="handleClick($event)">Xem thông tin tài khoản</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

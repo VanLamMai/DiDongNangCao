@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaulthref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Máy ảnh</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera" (click) ="takePicture()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

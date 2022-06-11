@@ -1,0 +1,58 @@
+<ion-header>
+
+  <ion-toolbar color="greentea">
+
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>TeaTime App</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button class="cart" [routerLink]="['../store']" #buyButton>
+        <ion-icon slot="start" name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" style="position: relative;">
+
+  <ion-list style="margin-top: 25px">
+    <ion-item *ngFor="let p of products | async">
+
+      <ion-thumbnail slot="start">
+        <ion-img [src]="p.image"></ion-img>
+      </ion-thumbnail>
+
+      <ion-label class="ion-text-wrap" style="font-size: 13px">
+        {{ p.name }}<br>
+        <b>{{ p.price | currency:'VND' }}</b>
+      </ion-label>
+
+      <ion-row slot="end" class="ion-no-padding ion-align-items-center">
+        <ion-col size="5">
+          <ion-button (click)="addToCart($event, p)" fill="clear">
+            <ion-icon name="add" slot="icon-only"></ion-icon>
+          </ion-button>
+        </ion-col>
+ 
+        <ion-col size="2">
+          {{ cart[p.uid] || 0 }}
+        </ion-col>
+ 
+        <ion-col size="5">
+          <ion-button (click)="removeFromCart($event, p)" fill="clear" [disabled]="!cart[p.uid] || cart[p.uid] == 0">
+            <ion-icon name="remove" slot="icon-only"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

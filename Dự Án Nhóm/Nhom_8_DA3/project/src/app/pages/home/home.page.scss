@@ -1,0 +1,24 @@
+ion-badge {
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    top: 19px;
+}
+
+ion-icon[name="cart-outline"] {
+    color: rgb(109, 126, 101);
+}
+
+ion-buttons[slot="end"] > ion-button.cart {
+    margin-right: 20px;
+}
+
+ion-buttons[slot="primary"] {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    ion-button {
+        flex: 1;
+    }
+}

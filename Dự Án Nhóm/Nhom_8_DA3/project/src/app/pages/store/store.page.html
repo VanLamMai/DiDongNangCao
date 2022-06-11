@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="greentea">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../home" routerDirection="back">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Giỏ hàng</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let p of products">
+      <p slot="start">
+        {{ p.count }} x
+      </p>
+      <ion-label>
+        {{ p.name }}
+      </ion-label>
+   
+      <ion-avatar slot="end">
+        <ion-img [src]="p.image"></ion-img>
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="success">
+      <ion-button expand="full" (click)="checkout()" fill="clear" color="light" [routerLink]="['../home']">
+        Checkout
+      </ion-button>
+    </ion-toolbar>
+  </ion-footer>

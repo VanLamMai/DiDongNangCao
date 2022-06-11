@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>    
+    <ion-title>Hệ thống ATM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">    
+    <ion-title>Đăng nhập</ion-title>
+    <ion-input [(ngModel)]="email" type="email" placeholder="Email"></ion-input>
+    <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input> 
+    <p (*ngif)="showMessage">{{message}}</p>
+    <ion-button (click)="clickButton()">Đăng nhập</ion-button> 
+    <ion-button (click)="addAccount()">Thêm</ion-button> 
+    <ion-button (click)="deleteAccount()">Xóa</ion-button> 
+    <ion-button (click)="getListAccount()">Xem tất cả</ion-button> 
+  </div>    
+</ion-content>

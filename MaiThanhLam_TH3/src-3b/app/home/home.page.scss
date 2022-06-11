@@ -1,0 +1,24 @@
+
+ion-content{
+  --ion-background-color : linear-gradient(to right top, rgb(209, 87, 87), rgb(234, 245, 80));
+}
+
+#container {
+  text-align: left;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(199, 118, 42);
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

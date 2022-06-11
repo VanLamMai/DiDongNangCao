@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="full">
+    <ion-label><strong>Tài khoản:</strong> {{accountNo}}</ion-label>
+  </ion-item>
+
+  <ion-button expand="block" fill="clear" (click)="onClick()">Xem thông tin tài khoản</ion-button>
+  <ion-button expand="block" fill="clear" (click)="onPhoto()">Chụp hình</ion-button>
+  <ion-button expand="block" fill="clear">Thoát</ion-button>
+</ion-content>
